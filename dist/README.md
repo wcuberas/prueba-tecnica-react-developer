@@ -6,7 +6,7 @@ Desarrollo de una App que muestra la información de series y películas. En la 
 
 ## Comenzando 🚀
 
-Primero se debe clonar el repositorio y ejecutar "npm install" desde la consola para instalar las dependencias.
+Primero se debe clonar el repositorio, ingresar a la carpeta /dist y ejecutar "npm install" desde la consola para instalar las dependencias.
 Luego correr el comando "npm start", se abrirá automáticamente una ventana del navegador con el proyecto.
 Si todo salió bien debería ver esta imagen...⬇️
 
