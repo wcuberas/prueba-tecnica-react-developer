@@ -22,13 +22,13 @@ Si todo salió bien debería ver esta imagen...⬇️
 
 ## Tecnologías utilizadas
 
-El proyecto fue realizado con React, Redux, CSS puro y SASS como preprocesador. 
+El proyecto fue realizado con React, Redux, CSS puro y SASS como preprocesador. El deploy con Firebase.
 
 ---
 
 ## Deploy 
 
-👉  [Deploy](https://chedoc-challenge.web.app/ "Deploy")  👈
+👉  [Deploy Here](https://chedoc-challenge.web.app/ "Deploy")  👈
 
 
 ---
