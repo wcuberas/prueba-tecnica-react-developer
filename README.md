@@ -28,6 +28,7 @@ El proyecto fue realizado con React, Redux, CSS puro y SASS como preprocesador.
 
 ## Deploy 
 
+👉  [Deploy](https://chedoc-challenge.web.app/ "Deploy")  👈
 
 
 ---
