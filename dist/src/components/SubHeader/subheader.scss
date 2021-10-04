@@ -1,0 +1,21 @@
+@import '../../styles/base';
+
+.subHeader {
+        background-color: $smokeGrey;
+        width: 100%;
+        height: 4rem;
+        padding: 2rem 6rem;
+        font-size: 1.8rem;
+        color: $white;
+        display: flex;
+        align-items: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+        .subHeader {
+                padding: 2rem 1rem;
+                font-size: 1.6rem;
+        }
+}

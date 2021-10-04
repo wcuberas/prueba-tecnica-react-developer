@@ -1,0 +1,106 @@
+@import '../../styles/base';
+@import '../../styles/base';
+
+.header {
+    background-color: $blue;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+
+    &__logo {
+        color: $white;
+        margin: 0 6rem;
+
+        h2 {
+            text-decoration: none;
+            color: $white;
+        }
+        
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 4rem;
+        color:$white;
+        
+        &-login {
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        &-free-trial {
+    
+            .btn {
+                background-color: $smokeGrey;
+                color: $white;
+                padding: 5px;
+            }
+            
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .header {
+
+        &__logo {
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        &__right {
+
+            &-free-trial {
+                .btn {
+                    font-size: 12px;
+                    height: 50px;
+                    width: 80px;
+                }
+            }
+
+            &-login {
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        
+        &__logo {
+            margin: 0 1rem;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        &__right {
+            margin: 0 1rem;
+
+            &-free-trial {
+                .btn {
+                    font-size: 12px;
+                    height: 50px;
+                    width: 80px;
+                }
+            }
+
+            &-login {
+                width: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '../../styles/base';
+
+
+.home {
+    width: 100%;
+    min-height: calc(100vh - 330px);
+
+
+    &__display {
+        display: flex;
+        padding: 2rem 6rem;
+        flex-wrap: wrap;
+        gap: 40px;
+        
+
+        &-opc {
+            display: flex;
+            background-color: $smokeGrey;
+            width: 150px;
+            height: 220px;
+            position: relative;
+
+
+            img {
+                width: 280px;
+                height: 160px;
+                position: absolute;
+                top: 26px;
+                left: -65px;
+                right: 0;
+                bottom: 0;
+                
+            }
+
+            &-det {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: $white;
+
+                p {
+                    font-size: 2rem;
+                    font-weight: weight(medium)
+                }
+                
+            }
+        }
+
+        &-popular p {
+            padding-top: 12px;
+            color: $smokeGrey;
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .home {
+
+        &__display {
+            justify-content: center;
+        }
+    }
+}

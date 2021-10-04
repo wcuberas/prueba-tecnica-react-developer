@@ -1,0 +1,81 @@
+//consist all basic setup, colors and fonts
+@import './reset';
+
+//fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+//functions
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name )
+};
+
+//font weight
+
+$font-weights:(
+    'regular':400,
+    'medium':500,
+    'bold':700
+);
+$font-family:'Poppins', sans-serif;
+
+// global
+$max-width:1200px;
+:root{
+    font-size:16px;
+    font-weight: weight(regular);
+    font-family: $font-family;
+    //colors
+    --primary-color:#3D89E9;
+    --primary-color-hover:#1F7AED;
+
+};
+
+//all variables
+$primary:var(--primary-color);
+$primaryHover:var( --primary-color-hover);
+$black:#15181F;
+
+$grey:#F6F7F9;
+$smokeGrey: #323234;
+$white:#FFFFFF;
+$blackLight:#898B8E;
+$boxShadow: 0px 6px 16px rgba(165, 155, 151, 0.19);
+$blue: #1887db;
+
+//typography
+
+h2{
+    font-size: 2rem;
+    font-family: $font-family;
+    font-weight: weight(regular);
+};
+
+p{
+    font-size: 1rem;
+    font-family: $font-family;
+    font-weight: weight(regular)
+};
+
+
+//buttons style
+
+.btn {
+    font-size: 1rem;
+    font-weight: weight(medium);
+    font-family: $font-family!important;
+    border-radius: 8px!important;
+    display: block;
+    text-align: center!important;
+    transition: all 0.2s;
+    width: 100%;
+    height: auto;
+
+   
+}
+
+
+//general style overrides
+.cursor-pointer{
+    cursor: pointer;
+}
+

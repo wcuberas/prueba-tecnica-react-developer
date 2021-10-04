@@ -1,0 +1,97 @@
+@import '../../styles/base';
+
+.container-footer {
+    background-color: $smokeGrey;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding: 2rem 6rem;
+
+    &__pages {
+        padding-bottom: 1rem;
+
+        li {
+            display:inline;
+            padding-right:5px;
+        }
+
+        span {
+            padding-right: 3px;
+        }
+
+        a {
+            color:$blackLight;
+            text-decoration:none;
+            font-weight: weight(medium)
+        }
+    }
+
+    &__copyright {
+        color: $blackLight;
+        padding-bottom: 2rem;
+    }
+
+    &__endBox {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        
+
+        &-social {
+            display: flex;
+            align-items: flex-start;
+            
+            img {
+                width: 50px;
+                height: 50px;
+                padding: 10px 10px 10px 0px;
+            }
+        }
+
+        &-apps {
+            display: flex;
+            align-content: flex-end;
+
+            img {
+                width: 140px;
+                height: 60px;
+                padding: 10px 0px 10px 10px;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer__endBox {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-footer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .footer__endBox-apps {
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            width: 130px;
+            height: 60px;
+            padding: 10px 0px 10px 10px;
+        }
+    }
+
+}

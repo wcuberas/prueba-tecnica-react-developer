@@ -1,0 +1,16 @@
+@import '../../styles/base';
+
+.movies {
+    width: 100%;
+    min-height: calc(100vh - 330px);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 6rem;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.loading {
+    width: 100%;
+    min-height: calc(100vh - 330px);
+}

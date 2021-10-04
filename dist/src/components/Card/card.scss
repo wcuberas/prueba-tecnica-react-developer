@@ -1,0 +1,47 @@
+@import '../../styles/base';
+
+
+.card {
+
+    &:hover {
+        opacity: 0.5; 
+    }
+
+    img {
+        display: flex;
+        background-color: $smokeGrey;
+        width: 150px;
+        height: 220px;
+
+        &:hover {
+            border: 3px solid $white;
+        }
+
+    }
+    
+    &__title {
+        padding-top: 12px;
+        color: $smokeGrey;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+        p {
+            width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: Ellipsis;
+        }
+
+        button {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            outline: inherit;
+        }
+        
+    }
+}
