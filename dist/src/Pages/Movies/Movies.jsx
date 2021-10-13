@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './movies.scss'
 import { useSelector, useDispatch } from 'react-redux';
 import { getMovies } from '../../Actions/Actions'
@@ -12,11 +12,22 @@ const Movies = () => {
 
     const dispatch = useDispatch();
     const movies = useSelector(state => state.moviesLoaded);
+    const [input, setInput] = useState('');
+    const [moviesFiltered, setMoviesFiltered] = useState([])
 
    useEffect(() => {
         dispatch(getMovies());
-
    },[dispatch])
+
+
+   const handleChange = (e) => {
+       setInput(e.target.value)
+   }
+
+   useEffect(() => {
+        const filteredMovies = input.length === 0 ? movies : movies.filter(movie => movie.title.includes(input));
+        setMoviesFiltered(filteredMovies)
+   }, [input, movies])
 
 
    if(movies.length === 0) {
@@ -31,13 +42,26 @@ const Movies = () => {
         <div>
             <Header />
             <SubHeader type={'Movies'} />
+
+            <input 
+                        className='input-search'
+                        type="text"
+                        placeholder="Busca tu pelicula"
+                        value={ input }
+                        onChange={ handleChange }
+                    />      
+
+
             {movies.length === 0 ? (
                 <div className="loading">
                     <h2>Cargando...</h2>
                 </div>
             ) : (
+                
+                
                 <div className="movies">
-                    {movies?.map((e, i) => (
+
+                    {moviesFiltered?.map((e, i) => (
                         <Card
                             key={i}
                             title={e.title}

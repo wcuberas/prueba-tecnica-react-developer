@@ -8,7 +8,7 @@ const Card = ({ title, imagen, description, releaseYear }) => {
     const modal = () => {
         Swal.fire({
             title: `${title} (${releaseYear})`,
-            text: description,
+            html: `<p> ${description} ${releaseYear}</p>`,
             imageUrl: imagen,
             imageWidth: 300,
             imageHeight: 400,
